@@ -1,11 +1,11 @@
 import smtplib
 from flask import Flask, render_template, request
-from flask_bootstrap import Bootstrap5
+#from flask_bootstrap import Bootstrap5
 import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6cornWlSihBXox7C0sKR6b'
-Bootstrap5(app)
+#Bootstrap5(app)
 
 MAIL = os.environ.get("G_MAIL")
 PASSWORD = os.environ.get("G_PASSWORD")
