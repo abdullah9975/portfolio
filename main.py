@@ -5,10 +5,10 @@ import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6cornWlSihBXox7C0sKR6b'
-Bootstrap5()
+Bootstrap5(app)
 
-MAIL = os.environ.get("G_MAIL")
-PASSWORD = os.environ.get("G_PASSWORD")
+MAIL = "99testabdullah@gmail.com"
+PASSWORD = "fbta uguw fiye bcjw"
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -39,4 +39,4 @@ def send_email(name, email, phone, message):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001)
+    app.run(debug=True, port=5001)
